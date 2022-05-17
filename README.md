@@ -1,0 +1,1 @@
+# django-with-s3-bucket

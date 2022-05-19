@@ -16,4 +16,4 @@ RUN poetry config virtualenvs.create false \
 COPY . /usr/src/app/
 
 ENTRYPOINT [ "sh", "setup_django.sh" ]
-CMD [ "gunicorn", "app_django.wsgi", "--bind", "0.0.0.0:8000" ]
+CMD [ "gunicorn", "app_django.wsgi", "--bind", "0.0.0.0:8000", "--reload" ]

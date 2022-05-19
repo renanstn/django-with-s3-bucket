@@ -11,6 +11,8 @@ Estudo feito com base [neste artigo](https://testdriven.io/blog/storing-django-s
 
 Trata-se de uma simples página de upload de imagem. Ao fazer o upload, a imagem é enviada a um bucket s3.
 
+Feito somente para estudar essa integração em si, nada mais.
+
 ## O que utiliza
 
 - Docker + docker-compose para orquestração dos containers

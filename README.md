@@ -6,3 +6,20 @@
 [![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=flat&logo=nginx&logoColor=white)](https://www.nginx.com/)
 
 Estudo feito com base [neste artigo](https://testdriven.io/blog/storing-django-static-and-media-files-on-amazon-s3/).
+
+## O que é
+
+Trata-se de uma simples página de upload de imagem. Ao fazer o upload, a imagem é enviada a um bucket s3.
+
+## O que utiliza
+
+- Docker + docker-compose para orquestração dos containers
+- Django para a base do app
+- Nginx para servir arquivos estáticos em desenvolvimento caso o `USE_S3` esteja desligado
+- Postgres como banco de dados
+
+## Subindo a aplicação e testando
+
+- Crie um arquivo `.env` e o preencha com as variáveis do `.env-sample`
+- Basta rodar um `docker-compose up`
+- Acesse em seu browser `localhost`
